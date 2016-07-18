@@ -1,0 +1,50 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>无标题文档</title>
+<style>
+	#box{
+		width:100px;
+		height:100px;
+		background:#f00;
+		}
+</style>
+<script>
+function widen(){
+	var oWiden = document.getElementById('box');
+	oWiden.style.width='200px';
+	}
+function heighten(){
+	var oHeighten = document.getElementById('box');
+	oHeighten.style.height='200px';
+	}	
+function discolor(){
+	var oDiscolor = document.getElementById('box');
+	oDiscolor.style.background='#090';
+	}
+function hide(){
+	var oHide = document.getElementById('box');
+	oHide.style.display='none';
+	}	
+function show(){
+	var oShow = document.getElementById('box');
+	oShow.style.display='block';
+	}	
+function moveright(){
+	var oMoveright = document.getElementById('box');
+	oMoveright.style.marginLeft='300px';
+	}	
+</script>
+</head>
+
+<body>
+    <input type="button" value="变宽" onclick="widen()">
+    <input type="button" value="变高" onclick="heighten()">
+    <input type="button" value="变色" onclick="discolor()">
+    <input type="button" value="隐藏" onclick="hide()">
+    <input type="button" value="显示" onclick="show()">
+    <input type="button" value="向右移动300px" onclick="moveright()">
+    <div id="box"></div>
+</body>
+</html>
